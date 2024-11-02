@@ -1,23 +1,30 @@
+// Define the Person class
 package Basic;
-//classes and objects
 
-class Stuent{
-      String  name;
-      int  age;
+class Person {
+    // Properties of the Person class
+    String name;
+    int age;
 
-     public void getInfo(){
-        System.out.println(this.name);
-        System.out.println(this.age);
+    // Method to display person's details
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
     }
 }
 
-public class Oops{
+// Main class to create an object and test the Person class
+public class Oops {
     public static void main(String[] args) {
-        Stuent s1 = new Stuent();
-        s1.name = "Aman";
-        s1.age = 20;
+        // Create an object of Person class
+        Person person1 = new Person();
 
-        s1.getInfo();
+        // Set values to properties
+        person1.name = "John";
+        person1.age = 25;
+
+        // Call the method to display person's details
+        person1.displayInfo();
     }
 }
 
